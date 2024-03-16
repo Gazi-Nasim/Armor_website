@@ -1,0 +1,88 @@
+.btn-login-social .social-pictogram {
+	max-width: 24px;
+	margin-right: 5px;
+}
+#trackers-ask-consent-gdpr.container {
+    width: 100%;
+}
+
+.tracker .flex-centered, .tracker.flex-centered {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.tracker .just1em {
+    width: 1em;
+    height: 1em;
+}
+
+.tracker .td-coche {
+    width:7em;
+}
+
+.tracker td.unset-nowrap {
+    white-space: unset !important;
+}
+
+@media screen and (orientation: portrait), screen and (max-width: 800px) {
+    #trackers-ask-consent-gdpr {
+        display: block;
+    }
+}
+.responsive-summary {
+	text-align: center;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.responsive-summary > li {
+	flex: 1;
+}
+.short-search-listbox
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.star-rating {
+	font-size: 1em;
+	vertical-align: middle;
+}
+.review-distribution .progress {
+	min-width: 60px;
+}
+.list-reviews article.panel {
+	margin-bottom: 20px;
+}
+.process-menu.affix {
+	top: 15px;
+}
+
+.process-menu.affix-bottom {
+	position: relative;
+	bottom: 0;
+}
+
+@media (max-width: 768px) {
+	.process-menu.affix,
+	.process-menu.affix-bottom {
+		position: static;
+	}
+}
+
+.process-top-menu {
+	z-index: 999;
+	top: 0;
+}
+
+.process-top-menu > .row {
+	padding: 0 15px;
+}
+
+.process-top-menu > .row > .col-sm-12 {
+	background: white;
+	text-align: center;
+	margin: 0 -15px;
+}
