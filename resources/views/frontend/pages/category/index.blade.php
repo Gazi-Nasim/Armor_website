@@ -284,9 +284,10 @@
                                 title="Two-tone fisherman&#039;s jumper - wool"
                                 href="{{route('product.details',[$item->slug , $item->id])}}"
                                 ><div class="product-visual__main">
+                                    {{--{{$item}}--}}
                                 <img
                                     alt="Picture"
-                                    src="{{ asset('uploads/'.$item->featured_img)}}"
+                                    src="{{ asset('/uploads/'.$item->featured_img)}}"
                                     class="visual"
                                     title=""
                                 />
@@ -299,7 +300,7 @@
                                 <div class="product-visual__secondary">
                                 <img
                                     alt=""
-                                    src="{{ asset('uploads/'.$item->featured_img)}}"
+                                    src="{{ asset('/uploads/'.$item->featured_img ?? '')}}"
                                     class="visual"
                                     title=""
                                 /></div
@@ -320,7 +321,7 @@
                                     <a
                                     title="Two-tone fisherman&#039;s jumper - wool"
                                     href="{{route('product.details' , [$item->slug , $item->id] )}}"
-                                    >{{$item->title}}</a
+                                    >{{$item->title ?? ''}}</a
                                     >
                                 </div>
                                 <div class="product-information">
@@ -2465,7 +2466,7 @@
                 >
                 <div class="contextual-enriched-menu__container hidden-xs">
                     <p class="h4 contextual-enriched-menu__father-name">
-                    {{$categry[0]->title}}
+                    {{$categry[0]->title ?? ''}}
                     </p>
 {{--$product--}}
                     <ul
@@ -2475,90 +2476,10 @@
                     <li>
                         <a
                         href="{{route('product.details',[$product->slug , $product->id])}}"
-                        >{{$product->title}}</a
+                        >{{$product->title ?? ''}}</a
                         >
                     </li>
                     @endforeach
-                    {{--<li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103915-parka-raincoat"
-                        >Parka &amp; raincoat</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103922-jacket-blazer"
-                        >Jacket &amp; blazer</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103929-puffer-jacket"
-                        >Puffer jacket</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103936-fleece-softshell-jacket"
-                        >Fleece &amp; softshell jacket</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103943-fisherman-s-smock"
-                        >Fisherman’s smock</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103950-fisherman-s-jumper-jumper"
-                        >Fisherman&#039;s jumper &amp; Jumper</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://www.armorlux.com/en/men/103957-cardigan"
-                        >Cardigan</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103964-breton-striped-shirt"
-                        >Breton striped shirt</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://www.armorlux.com/en/men/103971-t-shirt"
-                        >T-shirt</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103978-polo-shirt"
-                        >Polo shirt</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://www.armorlux.com/en/men/103985-shirt"
-                        >Shirt</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://www.armorlux.com/en/men/103992-trousers"
-                        >Trousers</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/103999-bermuda-shorts"
-                        >Bermuda &amp; shorts</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        href="https://www.armorlux.com/en/men/848563-sailing-jacket"
-                        >Sailing jacket</a
-                        >
-                    </li>--}}
                     </ul>
 
                     {{--<a

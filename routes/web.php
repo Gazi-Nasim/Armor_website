@@ -21,6 +21,7 @@ Route::get('/', function () {
 Route::controller(FrontendController::class)->group(function () {
     Route::get('/profit', 'profitproductDetails')->name('profit.detail');
     Route::get('/{slug}/details/{id}', 'productDetails')->name('product.details');
+    Route::get('/{slug}/special/{id}', 'Sp_product')->name('Sp.products');
     Route::get('/{slug}/{id}', 'product')->name('products');
     Route::get('/{slug}', 'page')->name('page');
     Route::get('/', 'home')->name('home');

@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Page;
 use App\Models\Product;
 use App\Models\Setting;
+use App\Models\SpecialCategory;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -15,10 +16,12 @@ class FrontendController extends Controller
 
     public function home()
     {
-        $categories = Category::where('parent_id', 0)->get();
+        $Sp_category = SpecialCategory::latest()->first();
+        $Sp_category2 = SpecialCategory::latest()->skip(1)->take(3)->get();
+        $Sp_category3 = SpecialCategory::latest()->skip(4)->take(1)->first();
         $product_all = Product::get();
         $settings = Setting::get();
-        return view('frontend.pages.home.home', compact('product_all', 'settings'));
+        return view('frontend.pages.home.home', compact('product_all', 'settings', 'Sp_category', 'Sp_category2', 'Sp_category3'));
     }
 
     public function product($slug, $id)
@@ -28,6 +31,14 @@ class FrontendController extends Controller
         // dd($categry[0]->title);
         return view('frontend.pages.category.index', compact('product', 'categry'));
     }
+
+    public function Sp_product($slug, $id)
+    {
+        $categry = SpecialCategory::where('slug', $slug)->get();
+        $product = Product::where('special_cat_id', $id)->get();
+        // dd($product); 
+        return view('frontend.pages.category.index', compact('product', 'categry'));
+    }
     public function productDetails($slug, $id)
     {
         // dd('productDetails');
@@ -35,9 +46,9 @@ class FrontendController extends Controller
         return view('frontend.pages.subCategory.index', compact('details'));
     }
     public function page($slug)
-    {        
+    {
         $page_info = Page::where('slug', $slug)->first();
-        return view('frontend.pages.policy.about-us', compact('page_info'));       
+        return view('frontend.pages.policy.about-us', compact('page_info'));
         // if ($slug == 'terms') {
         //     return view('frontend.pages.policy.terms', compact('page_info'));
         // } elseif ($slug == 'privacy-policy') {
