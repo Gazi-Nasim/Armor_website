@@ -2,11 +2,12 @@
 @section('title', 'Welcome to Dmore Hotel & Resort')
 @section('content')
 <div id="content">
+
     <section id="content-middle">
         <main id="content-column">
             <div class="editable-zone" data-id="mainContent">
                 <div data-type="block" data-id="44" data-name="Emakina_Website_Banner" data-layout-emakina-website-banner="" data-rbs-block-container="44" class="block container">
-                    <div class="banner center middle  dark " style="height: 80px; background-image:url({{asset('/uploads/'.$details->featured_img)}});">
+                    <div class="banner center middle  dark " style="height: 80px; background-image:url({{$details->featured_img}});">
                         <div class="banner__container">
                             <div class="container">
                                 <div class="banner__content">
@@ -23,7 +24,6 @@
                     <article class="product-details" data-ng-controller="RbsCatalogProductDetail" data-reviews-url="" data-product-type="variant">
                         <div class="product-content">
                             <div class="row">
-                                <h4>{{asset('/uploads/'.$details->featured_img)}}</h4>
                                 <div class="col-sm-5 col-lg-6">
                                     <div class="product-media-visual__container" data-rbs-media-preloaded-visuals="" data-common-catalog-product-page-visuals="">
                                         <div class="product-media-visual__brand">
@@ -32,31 +32,31 @@
                                         <div data-common-carousel="" data-slides-to-show="1" data-dots="true" data-needs-observer="true" data-mobile-first="true" data-contain-video="false" data-custom-responsive="[{&quot;breakpoint&quot;:768,&quot;settings&quot;:&quot;unslick&quot;}]" class="product-media-visual__carousel carousel hidden ">
                                         
                                             <div data-index="" class="product-media-visual__carousel-item">
-                                                <figure class="product-media-visual__figure" style="background-image: url({{asset('/uploads/'.$details->featured_img)}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
-                                                    <img src="{{asset('/uploads/'.$details->featured_img)}}" alt="" title="" class="product-media-visual__image" />
+                                                <figure class="product-media-visual__figure" style="background-image: url({{$details->featured_img}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
+                                                    <img src="{{$details->featured_img}}" alt="Picture" title="" class="product-media-visual__image" />
                                                 </figure>
                                             </div>
                                             <div data-index="" class="product-media-visual__carousel-item">
-                                                <figure class="product-media-visual__figure" style="background-image:url({{asset('/uploads/'.$details->featured_img)}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
-                                                    <img src="{{asset('/uploads/'.$details->featured_img)}}" alt="Product Picture 1" title="" class="product-media-visual__image" />
-                                                </figure>
-                                            </div>
-
-                                            <div data-index="" class="product-media-visual__carousel-item">
-                                                <figure class="product-media-visual__figure" style="background-image:url({{asset('/uploads/'.$details->featured_img)}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
-                                                    <img src="{{asset('/uploads/'.$details->featured_img)}}" alt="Product Picture 2" title="" class="product-media-visual__image" />
+                                                <figure class="product-media-visual__figure" style="background-image:url({{$details->featured_img}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
+                                                    <img src="{{$details->featured_img}}" alt="Product Picture 1" title="" class="product-media-visual__image" />
                                                 </figure>
                                             </div>
 
                                             <div data-index="" class="product-media-visual__carousel-item">
-                                                <figure class="product-media-visual__figure" style="background-image:url({{asset('/uploads/'.$details->featured_img)}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
-                                                    <img src="{{asset('/uploads/'.$details->featured_img)}}" alt="Product Picture 3" title="" class="product-media-visual__image" />
+                                                <figure class="product-media-visual__figure" style="background-image:url({{$details->featured_img}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
+                                                    <img src="{{$details->featured_img}}" alt="Product Picture 2" title="" class="product-media-visual__image" />
                                                 </figure>
                                             </div>
 
                                             <div data-index="" class="product-media-visual__carousel-item">
-                                                <figure class="product-media-visual__figure" style="background-image:url({{asset('/uploads/'.$details->featured_img)}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
-                                                    <img src="{{asset('/uploads/'.$details->featured_img)}}" alt="Product Picture 4" title="" class="product-media-visual__image" />
+                                                <figure class="product-media-visual__figure" style="background-image:url({{$details->featured_img}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
+                                                    <img src="{{$details->featured_img}}" alt="Product Picture 3" title="" class="product-media-visual__image" />
+                                                </figure>
+                                            </div>
+
+                                            <div data-index="" class="product-media-visual__carousel-item">
+                                                <figure class="product-media-visual__figure" style="background-image:url({{$details->featured_img}});" data-zoom-scale="2" data-ng-mousedown="zoomOnClick($event)">
+                                                    <img src="{{$details->featured_img}}" alt="Product Picture 4" title="" class="product-media-visual__image" />
                                                 </figure>
                                             </div>
                                         </div>
