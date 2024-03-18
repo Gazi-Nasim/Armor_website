@@ -134,7 +134,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/Assets/212253/Theme/Project/Common/css/lib/slick/slick.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/Assets/212253/Theme/Project/Armorlux/css/dist/themeArmorlux.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/Assets/212253/Theme/Project/Armorlux/blocks.css')}}" />
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     window.__change = {
         "__resources": [],
         "rbsWebsiteTrackersManager": {
@@ -740,7 +740,7 @@
             }
         }
     };
-</script> -->
+</script>
 <!-- for slick -->
 <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />

@@ -190,59 +190,57 @@
                         <div class="nosto_element" id="EN_frontpage-nosto-1"></div>
                     </div>
                     <!-- for slider -->
-                    <span>
-                        <div class="">
+                    <div class="">
 
-                            <div class="container">
-                                <div class="h3 nosto-title">
-                                    Our current favorites
-                                </div>
+                        <div class="container">
+                            <div class="h3 nosto-title">
+                                Our current favorites
+                            </div>
+                            <div class="">
                                 <div class="">
-                                    <div class="">
-                                        <div class="autoplay">
-                                            @foreach($product_all as $p_item)
-                                            {{$p_item->featured_img}}
-                                            <div>
-                                                <div class="">
-                                                    <img alt="Picture" src="{{asset('uploads/'.$p_item->featured_img)}}">
+                                    <div class="autoplay">
+                                        @foreach($product_all as $p_item)
+                                        <!-- {{$p_item}} -->
+                                        <div class="col-xs-6 col-md-4 slick-slide" style="width: 266px; padding-left: 5px; padding-right: 5px;" tabindex="0" data-slick-index="1" aria-hidden="false">
+                                            <div class="thumbnail thumbnail-product" data-gtm-product-clicks-v3="" data-gtm-product-impressions-v3="">
+                                                <div class="product-visual__container media-pictograms-container">
+                                                    <a title="Striped" dress="" -="" thick="" cotton="" href="{{route('product.details',[$p_item->slug,$p_item->id])}}" target="_self" tabindex="0">
+                                                        <div class="product-visual__main">
+                                                            <img alt="Striped" dress="" -="" thick="" cotton="" src="{{asset('/uploads/'.$p_item->gallery_img)}}" class="visual" title="Striped">
+                                                        </div>
+                                                        <div class="product-visual__secondary">
+                                                            <img alt="Striped" dress="" -="" thick="" cotton="" src="{{asset('/uploads/'.$p_item->gallery_img)}}" class="visual" title="Striped">
+                                                        </div>
+                                                    </a>
+                                                    <div class="moving-caption">
+
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            {{--<div class="col-xs-6 col-md-4 ">
-                                                <div class="" >
-                                                    <div class="">
-                                                        <a title=""  href="{{route('home')}}" target="_self" >
-                                            <div class="">
-                                                <img alt="Picture" src="{{asset('/uploads/'.$p_item->featured_img)}}">
-                                            </div>
-                                            </a>
-                                            <div class="moving-caption">
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <div class="product-label">
-                                                <a title="Fouesnant" plain="" fisherman&#39;s="" jumper="" -="" wool="" href="https://www.armorlux.com:443/en/fisherman-s-jumper-armor-lux-fouesnant-plain-fisherman-s-jumper-wool-793493.html" target="_self">
-                                                    Fouesnant plain fisherman's jum...</a>
-                                            </div>
-                                            <div class="product-information">
-                                                <div class="variants-available"></div>
-                                                <div class="product-price">
-                                                    <div>
-                                                        <ul class="list-unstyled main-price">
-                                                            <li class="price price-with-taxes">
-                                                                <span class="price-value">149.00€</span> <!-- <del class="price-old-value" title="ancien prix">149.00€</del> -->
-                                                            </li>
-                                                        </ul>
+                                                <div class="caption">
+                                                    <div class="product-label">
+                                                        <a title="Striped" dress="" -="" thick="" cotton="" href="{{route('product.details',[$p_item->slug,$p_item->id])}}" target="_self" tabindex="0">
+                                                            Striped Dress -{{$p_item->title ?? ''}}</a>
+                                                    </div>
+                                                    <div class="product-information">
+                                                        <div class="variants-available"></div>
+                                                        <div class="product-price">
+                                                            <div>
+                                                                <ul class="list-unstyled main-price">
+                                                                    <li class="price price-with-taxes">
+                                                                        <span class="price-value">{{$p_item->sale_price ?? ''}}</span> <!-- <del class="price-old-value" title="ancien prix">89.00€</del> -->
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>--}}
-                                @endforeach
-                            </div>
-                        </div>
 
-                                            </span>
+                                        
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
     </div>
     </div>
