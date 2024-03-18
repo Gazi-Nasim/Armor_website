@@ -23,7 +23,7 @@
             <div class="editable-zone" data-id="mainContent">
                 <div data-type="block" data-id="2" data-name="Rbs_Website_Richtext" data-layout-rbs-website-richtext="" data-rbs-block-container="2" class="block container">
                     <div class="richtext">
-                        <h2 style="text-align: justify;">{{$page_info->name}}</h2>
+                        <h2 style="text-align: justify;">{{$page_info->name ?? ''}}</h2>
                         <div style="text-align: justify;"><br></div>
                         <div style="text-align: justify;"><br>{!!$page_info->content!!}</div>
                     </div>

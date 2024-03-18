@@ -1,5 +1,5 @@
     @extends('frontend.layout.app')
-    @section('title', 'Welcome to Dmore Hotel & Resort')
+    @section('title', 'Welcome to Armor')
     @section('content')
 
     <div id="content">
@@ -84,7 +84,7 @@
                                     <div class="banner__container">
                                         <div class="container">
                                             <div class="banner__content">
-                                                <h2 class="banner__title" style="color: black;">{{$pro_item->title}}</h2>
+                                                <h2 class="banner__title" style="color: black;">{{$pro_item->title ?? ""}}</h2>
 
                                                 <div class="banner__cta-container flex-display flex-wrap">
 
@@ -111,7 +111,7 @@
                                     <div class="banner__container">
                                         <div class="container">
                                             <div class="banner__content">
-                                                <h2 class="banner__title">{{$pro_item->title}}</h2>
+                                                <h2 class="banner__title">{{$pro_item->title ?? ''}}</h2>
 
                                                 <div class="banner__cta-container flex-display flex-wrap">
                                                     <a class="btn btn-secondary" href="{{route('Sp.products',[$pro_item->slug, $pro_item->id])}}" target="">
@@ -194,13 +194,13 @@
                             <div class="editorial-content-block__container container reverse">
                                 <div class="editorial-content-block__text">
                                     <div class="title-border editorial-content-block__title">
-                                        <h1>{{$settings[0]->dsn_title}}</h1>
+                                        <h1>{{$settings[0]->dsn_title ?? ''}}</h1>
                                     </div>
                                     <div class="editorial-content-block__text-wrapper">
-                                        <p class="subtitle">{{$settings[0]->dsn_subtitle}}</p>
+                                        <p class="subtitle">{{$settings[0]->dsn_subtitle ?? ''}}</p>
 
                                         <p class="description">
-                                            {{$settings[0]->dsn_descrip}}
+                                            {{$settings[0]->dsn_descrip ?? ''}}
                                             {{--<a href="the-story-of-the-breton-shirt.html">Breton striped shirt</a>--}}
                                         </p>
 
@@ -220,28 +220,11 @@
                         <div class="col-md-6" data-id="51">
                             <div data-type="block" data-id="55" data-name="Rbs_Website_Richtext" data-layout-rbs-website-richtext="" data-rbs-block-container="55" class="block">
                                 <div class="richtext">
-                                    <h4 style="text-align: center">{{$settings[0]->seilor_title}}</h4>
+                                    <h4 style="text-align: center">{{$settings[0]->seilor_title ?? ''}}</h4>
                                     <div>
                                         <div style="text-align: justify">
-                                            {{$settings[0]->seilor_details}}
+                                            {{$settings[0]->seilor_details ?? ''}}
                                         </div>
-                                        {{--<div style="text-align: justify"><br /></div>
-                                        <div style="text-align: justify">
-                                            Taking inspiration from the French maritime tradition,
-                                            Armor-Lux produces authentic nautical pieces for
-                                            <a data-document-id="103817" target="_self" href="103817-men.html">men</a>,
-                                            <a data-document-id="103824" target="_self" href="103824-women.html">women</a>
-                                            and
-                                            <a data-document-id="103831" target="_self" href="103831-kids-baby.html">children</a>, such as the
-                                            <a data-document-id="1165989" target="_self" href="the-pea-coat.html">wool peacoat</a>,
-                                            <a data-document-id="2132374" target="_self" href="the-duffle-coat.html">the dufflecoat</a>,
-                                            <a data-document-id="2428041" target="_self" href="the-breton-shirt.html">the « mariniere » classic breton striped shirt</a>,
-                                            <a data-document-id="2132368" target="_self" href="the-fisherman-s-smock-.html">the Fisherman jumper</a>,
-                                            <a data-document-id="2132365" target="_self" href="the-breton-raincoat-.html">the sailor raincoat </a>or Fisherman’s smock. Armor Lux represents over 80
-                                            years of experience, 600 employees, 3 production sites,
-                                            80 stores all over France, following the same values :
-                                            Quality, Innovation and Ethics.
-                                        </div>--}}
                                     </div>
                                 </div>
                             </div>
@@ -249,42 +232,13 @@
                         <div class="col-md-6" data-id="52">
                             <div data-type="block" data-id="56" data-name="Rbs_Website_Richtext" data-layout-rbs-website-richtext="" data-rbs-block-container="56" class="block">
                                 <div class="richtext">
-                                    <h4 style="text-align: center">{{$settings[0]->collection_title}}</h4>
+                                    <h4 style="text-align: center">{{$settings[0]->collection_title ?? ''}}</h4>
                                     <div>
                                         <div style="text-align: justify">
-                                            {{$settings[0]->collection_details}}
+                                            {{$settings[0]->collection_details ?? ''}}
 
                                         </div>
-                                        {{--<div style="text-align: justify"><br /></div>
-                                        <div style="text-align: justify">
-                                            A fashion clothing collection for
-                                            <a data-document-id="103824" target="_self" href="103824-women.html">women</a>, from
-                                            <a data-document-id="104643" target="_self" href="women/clothing/104643-t-shirt.html">t-shirt</a>,
-                                            <a data-document-id="104167" target="_self" href="women/104167-dress.html">dress</a>,
-                                            <a data-document-id="104545" target="_self" href="women/clothing/104545-parka.html">parka</a>,
-                                            <a data-document-id="104111" target="_self" href="women/104111-fleece-softshell-jacket.html">fleece jacket</a>,
-                                            <a data-document-id="104118" target="_self" href="women/104118-fisherman-s-jumper-jumper.html">jumper</a>,
-                                            <a data-document-id="104153" target="_self" href="women/104153-trousers.html">pants</a>,
-                                            <a data-document-id="104139" target="_self" href="women/104139-blouse-shirt.html">tunic</a>
-                                            to
-                                            <a data-document-id="103873" target="_self" href="103873-underwear.html">underwear</a>
-                                            and
-                                            <a data-document-id="103880" target="_self" href="103880-nightwear.html">nightwear,</a>
-                                            but also a fashion collection for
-                                            <a data-document-id="103817" target="_self" href="103817-men.html">men</a>
-                                            from
-                                            <a data-document-id="103971" target="_self" href="men/103971-t-shirt.html">t-shirt</a>,
-                                            <a data-document-id="104286" target="_self" href="men/clothing/104286-parka.html">parka</a>,
-                                            <a data-document-id="103936" target="_self" href="men/103936-fleece-softshell-jacket.html">fleece jacket</a>,
-                                            <a data-document-id="103950" target="_self" href="men/103950-fisherman-s-jumper-jumper.html">jumper</a>,
-                                            <a data-document-id="103992" target="_self" href="men/103992-trousers.html">pants</a>,
-                                            <a data-document-id="103978" target="_self" href="men/103978-polo-shirt.html">polo</a>
-                                            to
-                                            <a data-document-id="103852" target="_self" href="103852-underwear.html">underwear</a>, and
-                                            <a data-document-id="103859" target="_self" href="103859-nightwear.html">nightwear</a>. Discover our
-                                            <a data-document-id="848563" target="_self" href="men/848563-sailing-jacket.html">technical sailing clothes</a>
-                                            through our brand Bermudes.
-                                        </div>--}}
+                                        
                                     </div>
                                 </div>
                             </div>
