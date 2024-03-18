@@ -1,6 +1,6 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     window.gdprAppliesGlobally = true;
     (function() {
         function a(e) {
@@ -92,7 +92,7 @@
             n.parentNode.insertBefore(t, n)
         })("90752f4a-4ca4-4edc-b7ea-f5d1d8a863d5")
     })();
-</script>
+</script> -->
 <title>Armor-Lux, Official site | nautical clothing, ready-to-wear and underwear - Armor-lux</title>
 <meta name="description" content="Armor-Lux, Official site | nautical clothing, ready-to-wear and underwear - Armor-lux quality and authenticity since 1938" />
 <meta name="keywords" content="" />
@@ -134,7 +134,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/Assets/212253/Theme/Project/Common/css/lib/slick/slick.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/Assets/212253/Theme/Project/Armorlux/css/dist/themeArmorlux.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/Assets/212253/Theme/Project/Armorlux/blocks.css')}}" />
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     window.__change = {
         "__resources": [],
         "rbsWebsiteTrackersManager": {
@@ -740,4 +740,10 @@
             }
         }
     };
-</script>
+</script> -->
+<!-- for slick -->
+<!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->

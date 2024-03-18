@@ -21,6 +21,7 @@ class FrontendController extends Controller
         $Sp_category3 = SpecialCategory::latest()->skip(4)->take(1)->first();
         $product_all = Product::get();
         $settings = Setting::get();
+        // dd( $product_all);
         return view('frontend.pages.home.home', compact('product_all', 'settings', 'Sp_category', 'Sp_category2', 'Sp_category3'));
     }
 

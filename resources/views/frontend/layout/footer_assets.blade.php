@@ -21,3 +21,4 @@
 <script type="text/javascript" src="{{asset('frontend/Assets/212253/Theme/Project/Armorlux/blocks.js')}}"></script>
 <script type="text/javascript" src="{{asset('Theme/Project/Armorlux/ng-templatescb12.js?assetVersion=212253')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/Assets/212253/Theme/Rbs/Base/js/finalize-change-app.js')}}"></script>
+@stack('footer_script')

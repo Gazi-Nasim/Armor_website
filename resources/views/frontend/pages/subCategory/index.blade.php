@@ -2,7 +2,6 @@
 @section('title', 'Welcome to Dmore Hotel & Resort')
 @section('content')
 <div id="content">
-
     <section id="content-middle">
         <main id="content-column">
             <div class="editable-zone" data-id="mainContent">
@@ -24,6 +23,7 @@
                     <article class="product-details" data-ng-controller="RbsCatalogProductDetail" data-reviews-url="" data-product-type="variant">
                         <div class="product-content">
                             <div class="row">
+                                <h4>{{asset('/uploads/'.$details->featured_img)}}</h4>
                                 <div class="col-sm-5 col-lg-6">
                                     <div class="product-media-visual__container" data-rbs-media-preloaded-visuals="" data-common-catalog-product-page-visuals="">
                                         <div class="product-media-visual__brand">
@@ -66,7 +66,7 @@
                                     <header>
                                         <div class="product-header">
                                             <div class="product-header__title">
-                                                <h1 class="h3 no-top-margin">{{$details->title}}</h1>
+                                                <h1 class="h3 no-top-margin">{{$details->title ?? ''}}</h1>
                                             </div>
 
                                             <div class="product-header__flag-container">
@@ -78,7 +78,7 @@
                                                     <ul class="list-unstyled main-price">
                                                         <li class="price price-with-taxes">
                                                             <span class="price-value">
-                                                                Tk-{{$details->sale_price}}
+                                                                Tk-{{$details->sale_price ?? ''}}
                                                             </span>
                                                         </li>
                                                     </ul>
